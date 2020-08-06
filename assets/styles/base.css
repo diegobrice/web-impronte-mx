@@ -1,0 +1,46 @@
+@font-face {
+  font-family: "CaviarDreams";
+  src: url("../fonts/CaviarDreams.ttf");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "CaviarDreams";
+  src: url("../fonts/CaviarDreams_Bold.ttf");
+  font-weight: bold;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: CaviarDreams;
+  /* background: #0A3067;
+  background: #36A9E1;
+  color: rgb(10, 48, 103);
+  color: rgb(54, 169, 225); */
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: inherit;
+  flex-direction: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
