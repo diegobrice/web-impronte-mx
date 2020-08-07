@@ -1,7 +1,3 @@
-html {
-  overflow: hidden;
-}
-
 .header {
   display: flex;
   justify-content: space-between;
@@ -32,7 +28,6 @@ html {
   margin-left: 15px;
 }
 
-
 .header__nav {
   text-transform: uppercase;
   font-size: 20px;
@@ -42,7 +37,6 @@ html {
   margin-left: 30px;
   font-weight: bold;
 }
-
 
 .item {
   background-color: #f5f5f5;
@@ -80,7 +74,7 @@ html {
   width: 100%;
   height: 4px;
   margin-top: 10px;
-  background: linear-gradient(to right, #0A3067, #36A9E1);
+  background: linear-gradient(to right, #0a3067, #36a9e1);
 }
 
 .noticias__grid {
@@ -88,6 +82,70 @@ html {
   grid-template-columns: 1fr 1fr;
   gap: 20px;
   margin: 20px 0;
+}
+
+.noticia {
+  display: flex;
+  padding-bottom: 20px;
+  /* border: 1px solid #ccc; */
+  border-bottom: 1px solid #ccc;
+}
+
+.noticia__img {
+  height: 175px;
+  width: 175px;
+  min-height: 175px;
+  min-width: 175px;
+  overflow: hidden;
+}
+
+.noticia__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.8s;
+}
+
+.noticia:hover img {
+  transform: scale(1.2);
+  transition: all 0.8s;
+}
+
+.noticia__info {
+  padding: 10px;
+}
+
+.noticia h3 {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.noticia i {
+  margin-right: 5px;
+}
+
+.noticia__etiquetas {
+  color: #0a3067;
+  font-size: 14px;
+}
+
+.noticia__date {
+  margin-right: 20px;
+}
+
+.button {
+  display: inline-block;
+  font-size: 14px;
+  padding: 8px 25px;
+  background: #36a9e1;
+  color: #ffffff;
+  font-weight: bold;
+  transition: background 0.5s;
+}
+
+.button:hover {
+  background: #0a3067;
+  transition: background 0.5s;
 }
 
 .contacto {
@@ -107,14 +165,18 @@ html {
   max-width: 400px;
 }
 
-.circles {
-  background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url(../img/bg_circle.png);
+/* .circles {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.6),
+      rgba(255, 255, 255, 0.6)
+    ),
+    url(../img/bg_circle.png);
   background-repeat: no-repeat;
   background-position: bottom center;
   background-size: 70%;
   position: absolute;
   width: 100%;
-  height: 100vh;
+  /* height: 100vh; */
   bottom: -150px;
   z-index: -10;
-}
+} */
