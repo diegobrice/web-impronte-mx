@@ -15,6 +15,8 @@
 .logo {
   max-width: 400px;
   width: 70%;
+  filter: drop-shadow(1px 1px 3px #222);
+  -webkit-filter: drop-shadow(1px 1px 3px #222);
 }
 
 .slogan {
@@ -25,7 +27,7 @@
 }
 
 .nav {
-  text-shadow: 1px 1px #000000;
+  text-shadow: 1px 1px #222;
   margin: 120px 0;
   font-size: 22px;
 }
@@ -58,4 +60,25 @@
 .social {
   position: absolute;
   bottom: 70px;
+}
+
+@media (max-width: 767px) {
+
+  .nav {
+    text-align: center;
+    margin: 0 0 40px;
+  }
+
+  .nav ul {
+    flex-direction: column;
+  }
+
+  .nav li {
+    margin: 15px 0;
+  }
+
+  .linea {
+    display: none;
+  }
+
 }
