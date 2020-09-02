@@ -17,22 +17,24 @@
 }
 
 body {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
   font-family: CaviarDreams;
-  /* background: #0A3067;
-  background: #36A9E1;
-  color: rgb(10, 48, 103);
-  color: rgb(54, 169, 225); */
+  color: #353b48;
 }
 
 .container {
   max-width: 1200px;
   width: 100%;
+  height: 100%;
   margin: 0 auto;
   padding: 0 20px;
   display: inherit;
   flex-direction: inherit;
   justify-content: inherit;
   align-items: inherit;
+  flex: 1;
 }
 
 ul {
@@ -42,5 +44,9 @@ ul {
 
 a {
   text-decoration: none;
-  color: #000000;
+  color: #353b48;
+}
+
+a:hover {
+  color: #0a3067;
 }
